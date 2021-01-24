@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.MyFirstProject.MainActivity"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_new_note"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_new_note_btn"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_date_btn"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/btn_new_note"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/et_title_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_date"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text=""
+        android:textColor="#000"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/et_title_date"/>
+
+</RelativeLayout>
